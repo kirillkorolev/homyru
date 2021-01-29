@@ -1,8 +1,10 @@
-import {equipmentSlider, promotionSlider, catalogSlider, promoSlider} from "./modules/sliders";
+import {equipmentSlider, promotionSlider, catalogSliderNew, catalogSliderRecomended, catalogSliderSale, promoSlider} from "./modules/sliders";
 import {addListenerToMenuButton} from "./modules/mobile-menu";
 
 equipmentSlider();
 promotionSlider();
-catalogSlider();
+catalogSliderNew();
+catalogSliderRecomended();
+catalogSliderSale();
 promoSlider();
 addListenerToMenuButton();

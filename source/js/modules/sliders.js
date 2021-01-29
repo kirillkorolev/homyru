@@ -33,11 +33,11 @@ const promotionSlider = () => {
   });
 };
 
-const catalogSlider = () => {
-  const mySwiper = new Swiper(`.catalog__slider`, {
+const catalogSliderNew = () => {
+  const mySwiper = new Swiper(`.catalog__slider--new`, {
     navigation: {
-      nextEl: `.catalog__button--next`,
-      prevEl: `.catalog__button--prev`,
+      nextEl: `.catalog__button-new--next`,
+      prevEl: `.catalog__button-new--prev`,
     },
     watchOverflow: true,
     loop: true,
@@ -57,6 +57,57 @@ const catalogSlider = () => {
     }
   });
 };
+
+const catalogSliderRecomended = () => {
+  const mySwiper = new Swiper(`.catalog__slider--recomended`, {
+    navigation: {
+      nextEl: `.catalog__button-recomended--next`,
+      prevEl: `.catalog__button-recomended--prev`,
+    },
+    watchOverflow: true,
+    loop: true,
+    slidesPerView: `auto`,
+    breakpoints: {
+      300: {
+        spaceBetween: 0,
+        centeredSlides: true,
+      },
+      750: {
+        spaceBetween: 38,
+        centeredSlides: false,
+      },
+      970: {
+        spaceBetween: 27,
+      },
+    }
+  });
+};
+
+const catalogSliderSale = () => {
+  const mySwiper = new Swiper(`.catalog__slider--sale`, {
+    navigation: {
+      nextEl: `.catalog__button-sale--next`,
+      prevEl: `.catalog__button-sale--prev`,
+    },
+    watchOverflow: true,
+    loop: true,
+    slidesPerView: `auto`,
+    breakpoints: {
+      300: {
+        spaceBetween: 0,
+        centeredSlides: true,
+      },
+      750: {
+        spaceBetween: 38,
+        centeredSlides: false,
+      },
+      970: {
+        spaceBetween: 27,
+      },
+    }
+  });
+};
+
 
 const promoSlider = () => {
   const mySwiper = new Swiper(`.promo__slider`, {
@@ -85,6 +136,6 @@ const promoSlider = () => {
   });
 };
 
-export {equipmentSlider, promotionSlider, catalogSlider, promoSlider};
+export {equipmentSlider, promotionSlider, catalogSliderNew, catalogSliderRecomended, catalogSliderSale, promoSlider};
 
 /* eslint-disable */

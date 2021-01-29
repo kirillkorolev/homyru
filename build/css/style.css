@@ -2394,6 +2394,29 @@ input[type="radio"].visually-hidden {
   max-width: 1025px;
   margin: 0 auto; }
 
+.promo__button {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  cursor: pointer;
+  width: 16px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 221px; }
+  .promo__button--prev {
+    left: 0;
+    background-image: url("../img/backgrounds/bg-left-promo-arrow@1x.png"); }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .promo__button--prev {
+        background-image: url("../img/backgrounds/bg-left-promo-arrow@2x.png"); } }
+  .promo__button--next {
+    right: 0;
+    background-image: url("../img/backgrounds/bg-right-promo-arrow@1x.png"); }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .promo__button--next {
+        background-image: url("../img/backgrounds/bg-right-promo-arrow@2x.png"); } }
+
 @media (max-width: 1169px) {
   .promo__item {
     width: 213px; }

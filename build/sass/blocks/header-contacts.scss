@@ -14,7 +14,13 @@
 
 .header-contacts__mail {
   color: $blue;
+  transition: color 0.4s ease-out 0.1s;
   text-decoration: underline;
+}
+
+.header-contacts__mail:hover,
+.header-contacts__mail:active {
+  color: $navy;
 }
 
 .header-contacts {
@@ -37,6 +43,7 @@
 
 .header-contacts__additional-phone {
   color: $black;
+  transition: all 0.4s ease-out 0.1s;
 }
 
 .header-contacts__call-back-link-wrapper {
@@ -83,6 +90,20 @@
   text-decoration-style: dotted;
   text-align: center;
   position: relative;
+  transition: all 0.4s ease-out 0.1s;
+  outline: none;
+}
+
+.header-contacts__call-back-link:hover,
+.header-contacts__call-back-link:focus,
+.header-contacts__additional-phone:hover,
+.header-contacts__additional-phone:focus {
+  color: $orange;
+}
+
+.header-contacts__call-back-link:active,
+.header-contacts__additional-phone:active {
+  opacity: 0.7;
 }
 
 .header-contacts__call-back-link::after {

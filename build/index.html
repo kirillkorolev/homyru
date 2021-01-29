@@ -351,7 +351,7 @@
           <div class="catalog__sect">
             <h3 class="catalog__title">Новинки</h3>
             <a href="#" class="catalog__link"><div>Все новинки</div></a>
-            <div class="catalog__slider swiper-container">
+            <div class="catalog__slider catalog__slider--new swiper-container">
               <div class="swiper-wrapper">
                 <div class="catalog__item swiper-slide">
                   <div class="catalog__slide-wrap">
@@ -495,13 +495,13 @@
                 </div>
               </div>
             </div>
-            <div class="catalog__button catalog__button--prev"></div>
-            <div class="catalog__button catalog__button--next"></div>
+            <div class="catalog__button catalog__button--prev catalog__button-new--prev"></div>
+            <div class="catalog__button catalog__button--next catalog__button-new--next"></div>
           </div>
           <div class="catalog__sect">
             <h3 class="catalog__title">Рекомендуем</h3>
             <a href="#" class="catalog__link"><div>Все рекомендации</div></a>
-            <div class="catalog__slider swiper-container">
+            <div class="catalog__slider catalog__slider--recomended swiper-container">
               <div class="swiper-wrapper">
                 <div class="catalog__item swiper-slide">
                   <div class="catalog__slide-wrap">
@@ -655,13 +655,13 @@
                 </div>
               </div>
             </div>
-            <div class="catalog__button catalog__button--prev"></div>
-            <div class="catalog__button catalog__button--next"></div>
+            <div class="catalog__button catalog__button--prev catalog__button-recomended--prev"></div>
+            <div class="catalog__button catalog__button--next catalog__button-recomended--next"></div>
           </div>
           <div class="catalog__sect">
             <h3 class="catalog__title">Распродажа</h3>
             <a href="#" class="catalog__link"><div>Все товары</div></a>
-            <div class="catalog__slider swiper-container">
+            <div class="catalog__slider catalog__slider--sale swiper-container">
               <div class="swiper-wrapper">
                 <div class="catalog__item swiper-slide">
                   <div class="catalog__slide-wrap">
@@ -793,10 +793,36 @@
                     <div class="catalog__label catalog__label--sale">%</div>
                   </div>
                 </div>
+                <div class="catalog__item swiper-slide">
+                  <div class="catalog__slide-wrap">
+                    <div class="catalog__image-wrap">
+                      <picture>
+                        <source type="image/webp" srcset="./img/pictures/phone-1@1x.webp, ./img/pictures/phone-1@1x.webp 2x">
+                        <img class="catalog__image" src="./img/pictures/phone-1@1x.png" srcset="./img/pictures/phone-1@2x.png 2x" alt="телефон">
+                      </picture>
+                    </div>
+                    <a href="#" class="catalog__item-link">P телефон Siemens Gigaset C530A IP</a>
+                    <div class="catalog__price-wrap">
+                      <span class="catalog__price-slogan">Цена:</span>
+                      <div class="catalog__price">12 300 р.</div>
+                      <div class="catalog__old-price"> 15 500  р.</div>
+                    </div>
+                    <div class="catalog__item-wrap">
+                      <button class="catalog__buy" type="button">
+                        <svg class="catalog__basket-icon" width="20" height="20">
+                          <use xlink:href="#icon-item-basket"></use>
+                        </svg>
+                        <span class="catalog__buy-slogan">Купить</span>
+                      </button>
+                      <a href="#" class="catalog__detals-link" target="_blank">Подробнее</a>
+                    </div>
+                    <div class="catalog__label catalog__label--sale">%</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="catalog__button catalog__button--prev"></div>
-            <div class="catalog__button catalog__button--next"></div>
+            <div class="catalog__button catalog__button--prev catalog__button-sale--prev"></div>
+            <div class="catalog__button catalog__button--next catalog__button-sale--next"></div>
           </div>
           <div class="catalog__sect promo">
             <h3 class="catalog__title">Акции</h3>

@@ -79,6 +79,15 @@
   position: relative;
 }
 
+.header-user__basket-link:hover,
+.header-user__basket-link:focus {
+  color: $navy;
+}
+
+.header-user__basket-link:active {
+  opacity: 0.7;
+}
+
 .header-user__basket-link::after {
   position: absolute;
   content: "/";
