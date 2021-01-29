@@ -122,6 +122,20 @@
   padding: 9px 8px;
   font-size: 15px;
   font-weight: 500;
+  transition: all 0.4s ease-out 0.1s;
+  position: relative;
+  bottom: 0;
+}
+
+.promotion__details-link:hover,
+.promotion__details-link:focus {
+  color: $orange;
+  background-color: $pale-grey;
+}
+
+.promotion__details-link:active {
+  box-shadow: none;
+  bottom: -1px;
 }
 
 .promotion__slide-content {
@@ -182,6 +196,17 @@
   }
 
   .swiper-pagination-bullet-active {
+    background-color: $orange;
+  }
+
+  .swiper-pagination-bullet:hover,
+  .swiper-pagination-bullet:focus {
+    background: $yellow;
+  }
+
+
+  .swiper-pagination-bullet-active:hover,
+  .swiper-pagination-bullet-active:focus {
     background-color: $orange;
   }
 }
