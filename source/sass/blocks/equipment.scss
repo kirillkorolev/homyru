@@ -1,0 +1,110 @@
+.equipment__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+  padding: 7px;
+  background-color: $orange;
+  color: $white;
+  transition: all 0.4s ease-out 0.1s;
+  display: block;
+  height: 31px;
+}
+
+.equipment__link:hover,
+.equipment__link:focus {
+  background-color: $light-orange;
+  text-decoration: underline;
+}
+
+.equipment__container {
+  padding: 1px 15px;
+  background-color: $orange;
+  position: relative;
+  border-radius: 10px;
+}
+
+.equipment {
+  padding: 0 15px;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+
+  .swiper-slide {
+    width: 105px;
+    border-right: 1px solid $light-orange;
+
+    &--phone {
+      width: 180px;
+    }
+  }
+}
+
+.equipment__button {
+  @include reset-button;
+
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 13px;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+}
+
+.equipment__button.swiper-button-disabled {
+  display: none;
+}
+
+.equipment__button::before,
+.equipment__button::after {
+  position: absolute;
+  content: "";
+  background-color: $white;
+  width: 10px;
+  height: 2px;
+  transition: background-color 0.4s ease-out 0.1s;
+}
+
+.equipment__button--prev::before {
+  top: 3px;
+  left: 2px;
+  transform: rotate(-45deg);
+}
+
+.equipment__button--prev::after {
+  bottom: 4px;
+  left: 2px;
+  transform: rotate(45deg);
+}
+
+.equipment__button--next::before {
+  top: 3px;
+  right: 2px;
+  transform: rotate(45deg);
+}
+
+.equipment__button--next::after {
+  bottom: 4px;
+  right: 2px;
+  transform: rotate(-45deg);
+}
+
+.equipment__button:hover::before,
+.equipment__button:focus::before,
+.equipment__button:hover::after,
+.equipment__button:focus::after {
+  background-color: $blue;
+}
+
+@media (max-width: 1169px) {
+  .equipment {
+    display: none;
+  }
+}

@@ -1,0 +1,164 @@
+.header-contacts__main-phone {
+  color: $black;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 5px;
+  transition: color 0.4s ease-out 0.1s;
+  letter-spacing: 1px;
+}
+
+.header-contacts__main-phone:hover,
+.header-contacts__main-phone:focus {
+  color: $orange;
+}
+
+.header-contacts__mail {
+  color: $blue;
+  text-decoration: underline;
+}
+
+.header-contacts {
+  width: 322px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.header-contacts__mobile-phone-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts__viber-icon,
+.header-contacts__whatsapp-icon {
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+.header-contacts__additional-phone {
+  color: $black;
+}
+
+.header-contacts__call-back-link-wrapper {
+  border: 2px solid $pale-grey;
+  border-radius: 14px;
+  width: 99px;
+  display: flex;
+  justify-content: center;
+  padding: 12px 5px;
+  flex-shrink: 0;
+
+  position: relative;
+}
+
+.header-contacts__call-back-link-wrapper::before,
+.header-contacts__call-back-link-wrapper::after {
+  position: absolute;
+  content: "";
+  background-color: $pale-grey;
+}
+
+.header-contacts__call-back-link-wrapper::before {
+  width: 15px;
+  height: 2px;
+  top: 12px;
+  right: -16px;
+  z-index: 2;
+}
+
+.header-contacts__call-back-link-wrapper::after {
+  width: 19px;
+  height: 2px;
+  transform: rotate(-45deg);
+  right: -17px;
+  top: 19px;
+}
+
+.header-contacts__call-back-link {
+  color: $blue;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-align: center;
+  position: relative;
+}
+
+.header-contacts__call-back-link::after {
+  position: absolute;
+  content: "";
+  background-color: $white;
+  height: 14px;
+  width: 2.5px;
+  top: 0;
+  right: -7px;
+}
+
+.header-contacts__skype {
+  display: none;
+}
+
+@media (max-width: 1169px) {
+  .header-contacts {
+    margin-top: 9px;
+  }
+
+  .header-contacts__skype {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-contacts__skype-icon {
+    flex-shrink: 0;
+    margin-right: 4px;
+  }
+
+  .header-contacts__skype-name {
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 969px) {
+  .header-contacts__call-back-wrap {
+    display: none;
+  }
+
+  .header-contacts {
+    width: auto;
+  }
+
+  .header-contacts__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header-contacts__viber-icon {
+    order: -1;
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+  }
+
+  .header-contacts__whatsapp-icon {
+    width: 17px;
+    height: 17px;
+    order: 0;
+    margin-right: 2px;
+  }
+
+  .header-contacts__mobile-phone-wrap {
+    margin-bottom: 2px;
+  }
+
+  .header-contacts__main-phone {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 749px) {
+  .header-contacts__wrap {
+    display: none;
+  }
+}

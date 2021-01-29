@@ -1,0 +1,174 @@
+.header-user {
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-user__account-link,
+.header-user__enter-link {
+  color: $blue;
+  position: relative;
+}
+
+
+.header-user__account-link::after,
+.header-user__enter-link::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 2px;
+  left: 0;
+  height: 1px;
+  background-color: $blue;
+  transition: width 0.4s ease-out 0.1s;
+}
+
+
+.header-user__account-link:hover::after,
+.header-user__enter-link:hover::after,
+.header-user__account-link:focus::after,
+.header-user__enter-link:focus::after {
+  width: 0;
+}
+
+.header-user__account-link {
+  margin-left: 20px;
+}
+
+.header-user__account {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.header-user__basket {
+  width: 194px;
+  background-image: url("../img/backgrounds/bg-basket@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  padding: 7px 15px;
+  margin-bottom: 5px;
+}
+
+.header-user__basket-icon {
+  flex-shrink: 0;
+  margin-right: 14px;
+}
+
+.header-user__basket-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-user__basket-slogan {
+  text-transform: uppercase;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.header-user__basket-link {
+  color: $blue;
+  line-height: 18px;
+  text-decoration: underline;
+  margin-right: 19px;
+  position: relative;
+}
+
+.header-user__basket-link:hover,
+.header-user__basket-link:focus {
+  color: $navy;
+}
+
+.header-user__basket-link:active {
+  opacity: 0.7;
+}
+
+.header-user__basket-link::after {
+  position: absolute;
+  content: "/";
+  color: $black;
+  font-size: 13px;
+  line-height: 18px;
+  right: -13px;
+  top: 0;
+}
+
+.header-user__user-lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.header-user__star-icon,
+.header-user__comparing-icon {
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+.header-user__comparing,
+.header-user__favorites {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1px;
+  border-bottom: 1px dotted $blue;
+}
+
+.header-user__comparing:hover,
+.header-user__favorites:hover,
+.header-user__comparing:focus,
+.header-user__favorites:focus {
+  border-bottom-color: transparent;
+}
+
+.header-user__slogan {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 18px;
+  color: $dark-grey;
+  margin-right: 4px;
+}
+
+.header-user__ammount {
+  font-size: 13px;
+  line-height: 16px;
+  color: $blue;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1169px) {
+  .header-user__favorites,
+  .header-user__comparing {
+    border-bottom: 1px solid $blue;
+  }
+}
+
+@media (max-width: 749px) {
+  .header-user__enter-link,
+  .header-user__basket,
+  .header-user__user-lists {
+    display: none;
+  }
+
+  .header-user {
+    width: auto;
+    margin-bottom: 16px;
+  }
+
+  .header-user__account-link {
+    margin-left: 0;
+  }
+
+  .header-user__account {
+    margin-bottom: 0;
+  }
+}

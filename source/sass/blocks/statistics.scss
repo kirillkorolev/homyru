@@ -1,0 +1,149 @@
+.statistics {
+  position: relative;
+  border-top: 1px solid $light-grey;
+  padding-top: 33px;
+  margin-bottom: 58px;
+}
+
+.statistics__title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: -12px;
+  left: 0;
+  padding-right: 10px;
+  text-transform: uppercase;
+  background-color: $white;
+}
+
+.statistics__list {
+  @include reset-list;
+
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.statistics__item {
+  width: 164px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.statistics__item:first-child {
+  margin-left: 0;
+}
+
+.statistics__item:last-child {
+  margin-right: 0;
+}
+
+.statistics__number {
+  margin: 15px;
+  border-radius: 50%;
+  border: 1px solid $light-grey;
+  background-color: $white;
+  width: 132px;
+  height: 132px;
+  padding-top: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--age {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+    color: $orange;
+  }
+
+  &--managers {
+    color: $navy;
+    font-size: 54px;
+    line-height: 54px;
+    font-weight: 700;
+  }
+
+  &--catalog {
+    color: $orange;
+    font-weight: 700;
+    flex-direction: column;
+
+    span:nth-of-type(1) {
+      font-size: 44px;
+      line-height: 40px;
+    }
+
+    span:nth-of-type(2) {
+      font-size: 19px;
+      line-height: 19px;
+      text-transform: uppercase;
+    }
+
+    span:nth-of-type(3) {
+      font-size: 36px;
+      line-height: 30px;
+    }
+  }
+
+  &--partners {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+    color: $navy;
+  }
+
+  &--work {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+    color: $orange;
+  }
+
+  &--lider {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+    color: $navy;
+  }
+}
+
+.statistics__note {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 1169px) {
+  .statistics__item {
+    width: 135px;
+    margin: 0 13px;
+  }
+}
+
+@media (max-width: 969px) {
+  .statistics__item:nth-child(5),
+  .statistics__item:nth-child(6) {
+    display: none;
+  }
+
+  .statistics__item {
+    width: 155px;
+  }
+}
+
+@media (max-width: 749px) {
+  .statistics {
+    display: none;
+  }
+}
