@@ -1763,7 +1763,7 @@ input[type="radio"].visually-hidden {
   .promotion__pagination.swiper-pagination .swiper-pagination-bullet:focus {
     background: #f7c159; }
   .promotion__pagination.swiper-pagination .swiper-pagination-bullet-active:hover,
-  .promotion__pagination.swiper-pagination .swiper-pagination-bullet-active:hover {
+  .promotion__pagination.swiper-pagination .swiper-pagination-bullet-active:focus {
     background-color: #ff5816; }
 
 @media (max-width: 1169px) {

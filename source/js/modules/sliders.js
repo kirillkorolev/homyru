@@ -36,8 +36,8 @@ const promotionSlider = () => {
 const catalogSliderNew = () => {
   const mySwiper = new Swiper(`.catalog__slider--new`, {
     navigation: {
-      nextEl: `.catalog__button-new--next`,
-      prevEl: `.catalog__button-new--prev`,
+      nextEl: `.slider-new-next`,
+      prevEl: `.slider-new-prev`,
     },
     watchOverflow: true,
     loop: true,
@@ -61,8 +61,8 @@ const catalogSliderNew = () => {
 const catalogSliderRecomended = () => {
   const mySwiper = new Swiper(`.catalog__slider--recomended`, {
     navigation: {
-      nextEl: `.catalog__button-recomended--next`,
-      prevEl: `.catalog__button-recomended--prev`,
+      nextEl: `.slider-recomended-next`,
+      prevEl: `.slider-recomended-prev`,
     },
     watchOverflow: true,
     loop: true,
@@ -86,8 +86,8 @@ const catalogSliderRecomended = () => {
 const catalogSliderSale = () => {
   const mySwiper = new Swiper(`.catalog__slider--sale`, {
     navigation: {
-      nextEl: `.catalog__button-sale--next`,
-      prevEl: `.catalog__button-sale--prev`,
+      nextEl: `.slider-sale-next`,
+      prevEl: `.slider-sale-prev`,
     },
     watchOverflow: true,
     loop: true,
