@@ -1,0 +1,96 @@
+.mobile-contacts {
+  display: none;
+}
+
+
+@media (max-width: 749px) {
+  .mobile-contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 12px;
+  }
+
+  .mobile-contacts__left-wrap,
+  .mobile-contacts__right-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-contacts__right-wrap {
+    align-items: flex-end;
+  }
+
+  .mobile-contacts__skype {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+  }
+
+  .mobile-contacts__skype-icon {
+    flex-shrink: 0;
+    margin-right: 4px;
+  }
+
+  .mobile-contacts__mail {
+    color: $blue;
+    text-decoration: underline;
+    transition: all 0.4s ease-out 0.1s;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 7px;
+  }
+
+  .mobile-contacts__mail:hover,
+  .mobile-contacts__mail:focus {
+    color: $black;
+    text-decoration: none;
+  }
+
+  .mobile-contacts__mail:active {
+    opacity: 0.7;
+  }
+
+  .mobile-contacts__skype-name {
+    font-weight: 300;
+  }
+
+  .mobile-contacts__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-contacts__viber-icon {
+    flex-shrink: 0;
+    margin-right: 3px;
+  }
+
+  .mobile-contacts__whatsapp-icon {
+    flex-shrink: 0;
+    margin-right: 1px;
+  }
+
+  .mobile-contacts__additional-phone {
+    color: $black;
+    font-weight: 300;
+    transition: all 0.4s ease-out 0.1s;
+  }
+
+  .mobile-contacts__main-phone {
+    color: $black;
+    font-size: 17px;
+    transition: all 0.4s ease-out 0.1s;
+    margin-bottom: 4px;
+  }
+
+  .mobile-contacts__additional-phone:hover,
+  .mobile-contacts__additional-phone:focus,
+  .mobile-contacts__main-phone:hover,
+  .mobile-contacts__main-phone:focus {
+    color: $orange;
+  }
+
+  .mobile-contacts__additional-phone:active,
+  .mobile-contacts__main-phone:active {
+    opacity: 0.7;
+  }
+}
